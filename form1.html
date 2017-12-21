@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menagjimi i kufijve t&euml; Kosov&euml;s</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>	
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+		<img class="col-sm-2 text-left" src="images/stema.png">
+		<h1 class="col-sm-4 text-center">Pikat kufitare</h1>
+	</div>
+
+	</header>
+	<hr style="max-width: 87%;">
+
+	<section class="content">
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-sm-4 text-right">
+		<img src="images/harta.png" class="image-responsive">
+		</div>
+		</div>-->
+	<form class="form-horizontal">
+	<!--<div class="form-group">
+    		<label class="control-label col-sm-2">Zgjedh pik&euml;n kufitare</label>
+	<div class="dropdown">
+  			<button class="btn btn-primary" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zgjedh pik&euml;n kufitare
+  			<span class="caret"></span></button>
+  			<ul class="dropdown-menu"> 
+    			<li><a href="#">V&euml;rmic&euml;</a></li>
+    			<li><a href="#">Qaf&euml; e Prushit</a></li>
+    			<li><a href="#">Qaf&euml; e Morin&euml;s</a></li>
+    			<li><a href="#">Kull&euml;</a></li>
+    			<li><a href="#">B&euml;rnjak</a></li>
+    			<li><a href="#">Jarinje</a></li>
+    			<li><a href="#">Merdar&euml;</a></li>
+    			<li><a href="#">Mutivod&euml;</a></li>
+    			<li><a href="#">Dheu i Bardh&euml;</a></li>
+    			<li><a href="#">Mu&#231;ibab&euml;</a></li>
+    			<li><a href="#">Hani i Elezit</a></li>
+    			<li><a href="#">Gllobo&#231;ic&euml;</a></li>
+    		</ul>
+    	</div>
+    </div>-->
+    <span>Zgjedh pik&euml;n kufitare</span>
+    <div class="dropdown">
+        <button class="btn btn-primary" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zgjedh pik&euml;n kufitare
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu"> 
+          <li><a href="#">V&euml;rmic&euml;</a></li>
+          <li><a href="#">Qaf&euml; e Prushit</a></li>
+          <li><a href="#">Qaf&euml; e Morin&euml;s</a></li>
+          <li><a href="#">Kull&euml;</a></li>
+          <li><a href="#">B&euml;rnjak</a></li>
+          <li><a href="#">Jarinje</a></li>
+          <li><a href="#">Merdar&euml;</a></li>
+          <li><a href="#">Mutivod&euml;</a></li>
+          <li><a href="#">Dheu i Bardh&euml;</a></li>
+          <li><a href="#">Mu&#231;ibab&euml;</a></li>
+          <li><a href="#">Hani i Elezit</a></li>
+          <li><a href="#">Gllobo&#231;ic&euml;</a></li>
+        </ul>
+      </div>
+</form>
+  
+    <hr style="max-width: 50%; padding-left: 22px;">
+
+	<form class="form-horizontal">
+		<div class="row">	
+  			<h4>Hyrje</h4>
+		</div>
+  		<div class="form-group">
+    		<label class="control-label col-sm-2">Minimum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="min-hyrje" name="hyrje-min-minuta">
+  		</div>
+    		<label class="control-label">minuta</label>
+  		</div>
+
+   		<div class="form-group">
+    		<label class="control-label col-sm-2">Maximum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="max-hyrje" name="hyrje-max-minuta">
+    	</div>
+    		<label class="control-label">minuta</label>
+  		</div>
+  		<div class="row">
+  			<h4>Dalje</h4>
+  		</div>
+  		<div class="form-group">
+      		<label class="control-label col-sm-2">Minimum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="min-dalje" name="dalje-min-minuta">
+  		</div>
+    		<label class="control-label">minuta</label>
+  		</div>
+
+   		<div class="form-group">
+    		<label class="control-label col-sm-2">Maximum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="max-dalje" name="dalje-max-minuta">
+    	</div>
+    		<label class="control-label">minuta</label>
+  		</div>
+  		<hr style="max-width: 50%; padding-left: 22px;">
+
+  		<div class="row">
+  			<h4>Hyrje</h4>
+  		</div>
+  		<div class="form-group">
+  		<label class="control-label col-sm-2">Minimum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="minmetra-hyrje" name="hyrje-min-metra">
+  		</div>
+    		<label class="control-label">metra</label>
+  		</div>
+
+   		<div class="form-group">
+    		<label class="control-label col-sm-2">Maximum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="maxmetra-hyrje" name="hyrje-max-metra">
+    	</div>
+    		<label class="control-label">metra</label>
+  		</div>
+  		<div class="row">
+  			<h4>Dalje</h4>
+  		</div>
+  		<div class="form-group">
+      		<label class="control-label col-sm-2">Minimum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="minmetra-dalje" name="dalje-min-metra">
+  		</div>
+    	<label class="control-label">metra</label>
+  		</div>
+
+   		<div class="form-group">
+    		<label class="control-label col-sm-2">Maximum</label>
+    	<div class="col-sm-2">
+      		<input type="number" class="form-control" id="maxmetra-dalje" name="dalje-max-metra">
+    	</div>
+    		<label class="control-label">metra</label>
+        <!--<span>metra</span>-->
+  		</div>
+
+      <!--<div class="form-group">
+    <label class="control-label col-xs-2"> EMRI I LABELES</label>
+    <div class="col-xs-5">
+    <input type="number" class="form-control" id="hyrje-max-minuta" name="hyrje-max-minuta">
+    </div>
+    <span> minuta </span>
+</div>-->
+ 
+
+  		<div class="form-group"> 
+  		<div class="row">
+    	<div class="col-sm-offset-2 col-sm-10">
+      		<button type="submit" class="btn btn-primary">D&euml;rgo</button>
+   
+      		<button type="submit" class="btn btn-primary">Fshij</button>
+    	</div>
+  		</div>
+  		</div>
+
+  		
+
+	</form>
+	</div>	
+	</section>
+	<hr style="max-width: 87%;">
+
+	<footer class="container">
+        <div class="row">
+          <p class="col-sm-12 text-center">&copy; 2017<a href="https://github.com/halbina" target="_blank"> Albina Hoti</a></p>
+      	</div>
+	</footer>
+
+	<!--<div class="dropdown">
+  			<button class="btn btn-primary" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zgjedh pik&euml;n kufitare
+  			<span class="caret"></span></button>
+  			<ul class="dropdown-menu"> 
+    			<li><a href="#">V&euml;rmic&euml;</a></li>
+    			<li><a href="#">Qaf&euml; e Prushit</a></li>
+    			<li><a href="#">Qaf&euml; e Morin&euml;s</a></li>
+    			<li><a href="#">Kull&euml;</a></li>
+    			<li><a href="#">B&euml;rnjak</a></li>
+    			<li><a href="#">Jarinje</a></li>
+    			<li><a href="#">Merdar&euml;</a></li>
+    			<li><a href="#">Mutivod&euml;</a></li>
+    			<li><a href="#">Dheu i Bardh&euml;</a></li>
+    			<li><a href="#">Mu&#231;ibab&euml;</a></li>
+    			<li><a href="#">Hani i Elezit</a></li>
+    			<li><a href="#">Gllobo&#231;ic&euml;</a></li>
+    		</ul>
+    	-->
+    	
+
+
+
+
+	
+</body>
+</html>
